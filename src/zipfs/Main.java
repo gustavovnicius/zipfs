@@ -16,7 +16,7 @@ public class Main {
 		for(int i = 1; i <= musicsCount; i++) {
 			Integer times = sc.nextInt();
 			String name = sc.next();
-			album.add(new Music(name, i, times * 1));
+			album.add(new Music(name, i, times * i));
 		}
 		Collections.sort(album);
 		
