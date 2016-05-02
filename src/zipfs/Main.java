@@ -13,14 +13,10 @@ public class Main {
 		Integer toSelect = sc.nextInt();
 
 		List<Music> album = new ArrayList<Music>();
-		Integer first = 0;
 		for(int i = 1; i <= musicsCount; i++) {
 			Integer times = sc.nextInt();
 			String name = sc.next();
-			if(i == 1) {
-				first = times;
-			}
-			album.add(new Music(name, i, (times / (first / i))));
+			album.add(new Music(name, i, times * 1));
 		}
 		Collections.sort(album);
 		
